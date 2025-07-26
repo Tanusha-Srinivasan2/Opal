@@ -1,0 +1,81 @@
+.formContainer {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: rgba(30, 30, 30, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  color: #f0f0f0;
+  font-family: "Segoe UI", "DM Sans", "Inter", sans-serif;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #cccccc;
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: rgba(45, 45, 45, 0.85);
+  color: #f5f5f5;
+  font-size: 1rem;
+  transition: background-color 9999s ease-in-out 0s;
+  box-shadow: 0 0 0 1000px rgba(45, 45, 45, 0.85) inset !important;
+}
+
+/* Remove white background on focus */
+.formGroup input:focus,
+.formGroup select:focus {
+  background-color: rgba(45, 45, 45, 0.95);
+  outline: 2px solid #a79268;
+}
+
+/* Prevent Chrome autofill yellow/white */
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px rgba(45, 45, 45, 0.85) inset !important;
+  -webkit-text-fill-color: #f5f5f5 !important;
+  transition: background-color 9999s ease-in-out 0s;
+}
+
+.formGroup input[type="file"] {
+  padding: 5px 0;
+  background: none;
+  color: #f5f5f5;
+}
+
+.formGroup input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #00bfa6;
+  background-color: tan;
+}
+
+.submitButton {
+  background-color: rgba(167, 146, 104, 0.5);
+  color: rgb(49, 43, 43);
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submitButton:hover {
+  background-color: #937f57;
+}

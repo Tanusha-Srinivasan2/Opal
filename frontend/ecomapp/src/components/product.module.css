@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+.productlist {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.5rem;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+  justify-items: center;
+}
+
+.productcard {
+  width: 250px;
+  height: auto;
+  background: rgba(58, 35, 35, 0.92);
+  color: #f5eee6;
+  padding: 0.75rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.04);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  border: 0.6px solid #3e2424;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  min-height: 210px;
+}
+
+.productcard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 16px rgba(44, 21, 21, 0.12);
+  border-color: #634040;
+}
+
+.productcard h3 {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #fff1e2;
+  margin: 0 0 0.2rem;
+  line-height: 1.2;
+}
+
+.productimage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.productcard p {
+  font-size: 0.72rem;
+  color: #dbc9ba;
+  margin: 0;
+
+  line-height: 1.2;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.price {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #e7c9a2;
+  margin: 0.2rem 0 0.1rem;
+}
+
+.available {
+  font-size: 0.7rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.available.in-stock {
+  color: #4caf50; /* green text */
+}
+
+.available.in-stock::after {
+  background: #4caf50; /* green dot */
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.available.out-of-stock {
+  color: #e53935; /* red text */
+}
+
+.available.out-of-stock::after {
+  background: #e53935; /* red dot */
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+
+.category {
+  font-size: 0.65rem;
+
+  color: #f5eee6;
+  font-weight: 500;
+  align-self: flex-start;
+  margin: 0.1rem 0 0 0;
+
+  letter-spacing: 0.03em;
+}
+
+.releasedate {
+  font-size: 0.65rem;
+  color: #e5d6c6;
+  opacity: 0.75;
+  margin-top: auto;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
