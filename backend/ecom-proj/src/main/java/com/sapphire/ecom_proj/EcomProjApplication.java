@@ -1,13 +1,13 @@
-package com.opal.Ecom.website;
+package com.sapphire.ecom_proj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class EcomWebsiteApplication {
+public class EcomProjApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EcomWebsiteApplication.class, args);
+		SpringApplication.run(EcomProjApplication.class, args);
 	}
 
 }
